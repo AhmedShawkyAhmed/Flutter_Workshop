@@ -7,14 +7,23 @@ class LinkedinPost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: black,
+      backgroundColor: white,
+      appBar: AppBar(
+        title: const Text('Linkedin Post'),
+        centerTitle: true,
+      ),
       body: Center(
         child: Container(
           width: double.infinity,
           height: 500,
-          color: white,
+          decoration: BoxDecoration(
+              color: white,
+              border: Border.all(
+                width: 2,
+                color: grey,
+              )),
           child: Padding(
-            padding: const EdgeInsets.only(top: 8),
+            padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: Column(
               children: [
                 Padding(
@@ -97,7 +106,7 @@ class LinkedinPost extends StatelessWidget {
                     children: [
                       Text(
                         '#sql #hackerrank',
-                        style: TextStyle(color: blue, fontSize: 12),
+                        style: TextStyle(color: blue, fontSize: 14),
                       ),
                     ],
                   ),
@@ -134,7 +143,7 @@ class LinkedinPost extends StatelessWidget {
                           'Just earned the Gold Badge for Sql on HackerRank!',
                           style: TextStyle(
                             color: black,
-                            fontSize: 13,
+                            fontSize: 14,
                           ),
                         ),
                         const SizedBox(
@@ -142,7 +151,7 @@ class LinkedinPost extends StatelessWidget {
                         ),
                         Text(
                           'hackerrank.com . 1 min read',
-                          style: TextStyle(color: black, fontSize: 11),
+                          style: TextStyle(color: black, fontSize: 12),
                         ),
                       ],
                     ),
@@ -170,7 +179,7 @@ class LinkedinPost extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(
-                            width: 1,
+                            width: 2,
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -187,7 +196,7 @@ class LinkedinPost extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(
-                            width: 1,
+                            width: 2,
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -224,7 +233,7 @@ class LinkedinPost extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.only(right: 10, left: 10),
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border(
@@ -232,32 +241,65 @@ class LinkedinPost extends StatelessWidget {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 40,right: 40,top: 10,bottom: 2,),
+                      padding: const EdgeInsets.only(
+                        left: 40,
+                        right: 40,
+                        top: 10,
+                        bottom: 2,
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
                             children: [
-                              Icon(Icons.thumb_up_alt_outlined,color: black,size: 20,),
-                              Text('Like',style: TextStyle(color: black),)
+                              Icon(
+                                Icons.thumb_up_alt_outlined,
+                                color: black,
+                                size: 20,
+                              ),
+                              Text(
+                                'Like',
+                                style: TextStyle(color: black),
+                              )
                             ],
                           ),
                           Column(
                             children: [
-                              Icon(Icons.comment_outlined,color: black,size: 20,),
-                              Text('Comment',style: TextStyle(color: black),)
+                              Icon(
+                                Icons.comment_outlined,
+                                color: black,
+                                size: 20,
+                              ),
+                              Text(
+                                'Comment',
+                                style: TextStyle(color: black),
+                              )
                             ],
                           ),
                           Column(
                             children: [
-                              Icon(Icons.share_outlined,color: black,size: 20,),
-                              Text('Share',style: TextStyle(color: black),)
+                              Icon(
+                                Icons.share_outlined,
+                                color: black,
+                                size: 20,
+                              ),
+                              Text(
+                                'Share',
+                                style: TextStyle(color: black),
+                              )
                             ],
                           ),
                           Column(
                             children: [
-                              Icon(Icons.send,color: black,size: 20,),
-                              Text('Snd',style: TextStyle(color: black),)
+                              Icon(
+                                Icons.send,
+                                color: black,
+                                size: 20,
+                              ),
+                              Text(
+                                'Snd',
+                                style: TextStyle(color: black),
+                              )
                             ],
                           ),
                         ],
