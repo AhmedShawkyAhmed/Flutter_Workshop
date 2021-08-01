@@ -11,10 +11,10 @@ class LinkedinPost extends StatelessWidget {
       body: Center(
         child: Container(
           width: double.infinity,
-          height: 600,
+          height: 500,
           color: white,
           child: Padding(
-            padding: const EdgeInsets.only(top: 8, bottom: 8),
+            padding: const EdgeInsets.only(top: 8),
             child: Column(
               children: [
                 Padding(
@@ -142,12 +142,126 @@ class LinkedinPost extends StatelessWidget {
                         ),
                         Text(
                           'hackerrank.com . 1 min read',
-                          style: TextStyle(
-                              color: black,
-                              fontSize: 11
-                          ),
+                          style: TextStyle(color: black, fontSize: 11),
                         ),
                       ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: blue,
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: Image.asset(
+                                'assets/like.png',
+                                height: 10,
+                                color: lightBlue,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 1,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: green,
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: Image.asset(
+                                'assets/celebrate.png',
+                                height: 10,
+                                color: lightGreen,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 1,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: red,
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: Image.asset(
+                                'assets/love.png',
+                                height: 10,
+                                color: lightRed,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            '34',
+                            style: TextStyle(
+                              color: black.withOpacity(0.6),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        '18 comments',
+                        style: TextStyle(
+                          color: black.withOpacity(0.6),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(width: 1, color: grey),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 40,right: 40,top: 10,bottom: 2,),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Icon(Icons.thumb_up_alt_outlined,color: black,size: 20,),
+                              Text('Like',style: TextStyle(color: black),)
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.comment_outlined,color: black,size: 20,),
+                              Text('Comment',style: TextStyle(color: black),)
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.share_outlined,color: black,size: 20,),
+                              Text('Share',style: TextStyle(color: black),)
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.send,color: black,size: 20,),
+                              Text('Snd',style: TextStyle(color: black),)
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
