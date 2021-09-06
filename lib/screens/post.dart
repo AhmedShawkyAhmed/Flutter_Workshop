@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workshop/constants.dart';
+import 'package:flutter_workshop/colors.dart';
 
 class LinkedinPost extends StatelessWidget {
   const LinkedinPost({Key? key}) : super(key: key);
